@@ -120,7 +120,7 @@ body{
     max-width: 500px;
     z-index: 3;
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
   }
   
   .main > *{
