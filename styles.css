@@ -94,12 +94,12 @@ body{
   
   #car{
     position: sticky;
+
   }
   
   .car{
     position: absolute;
     margin-left: 10px;
-    margin-top: -50px;
     width: fit-content
     transform-origin: top right;
     pointer-events: all;
