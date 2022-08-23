@@ -1,0 +1,359 @@
+/* Webfont: NeutralFaceRegular */@font-face {
+    font-family: 'NeutralFace';
+    src: url('NeutralFace.woff2') format('woff2'), /* Modern Browsers */
+         url('NeutralFace.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* @font-face {
+  font-family: 'ASansC130';
+  src: url('AUTHENTICSans-Condensed-130.woff2')
+  font-weight: 130;
+} */
+
+
+@font-face {
+  font-family: 'ASansC130';
+  src: url('AUTHENTICSans-130.woff2');
+  font-weight: 130;
+}
+
+
+body{
+    min-height: 300vh;
+    margin: 0;
+    font-family: 'ASansC130';
+    font-weight: 90;
+    opacity: 0.93;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  
+  p{
+    margin-block: 0;
+  }
+  
+  p + p{
+    margin-top: 16px;
+  }
+  
+  a{
+    color: rgb(0, 47, 255);
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+  }
+  a:hover{
+    color: rgb(177, 177, 177);
+  }
+  
+  .img{
+    display: block;
+  }
+  
+  img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .grid-area{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  .grid-area .item{
+    max-width: 80px;
+  }
+  
+  #intro{
+    height: 100vh;
+    /* background-color: lightblue; */
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  svg {
+    position: fixed;
+    pointer-events: none;
+  }
+  
+  #car{
+    position: sticky;
+  }
+  
+  .car{
+    position: absolute;
+    margin-left: 20px;
+    width: fit-content
+    transform-origin: top right;
+    pointer-events: all;
+  }
+
+  .car h1{
+  font-size: 50px;
+  }
+  
+  
+  #wrap{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    /* pointer-events: none; */
+  }
+  
+  .main{
+    padding: 20px;
+    max-width: 500px;
+    z-index: 3;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .main > *{
+    position: static;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .main + .main{
+    margin-top: 20px;
+  }
+  
+  .margin{
+    padding-top: 60vh;
+  }
+  
+  .type-b{
+    /* font-family: 'ASansC130'; */
+    font-weight: 130;
+  }
+  
+  
+  /* This block of CSS adds opacity transition to background */
+  .mfp-with-zoom .mfp-container,
+  .mfp-with-zoom.mfp-bg {
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      -webkit-transition: all 0.3s ease-out; 
+      -moz-transition: all 0.3s ease-out; 
+      -o-transition: all 0.3s ease-out; 
+      transition: all 0.3s ease-out;
+  }
+  
+  .mfp-with-zoom.mfp-ready .mfp-container {
+          opacity: 1;
+  }
+  .mfp-with-zoom.mfp-ready.mfp-bg {
+          opacity: 0.8;
+  }
+  
+  .mfp-with-zoom.mfp-removing .mfp-container, 
+  .mfp-with-zoom.mfp-removing.mfp-bg {
+      opacity: 0;
+  }
+  
+  
+  
+  /* padding-bottom and top for image */
+  .mfp-no-margins img.mfp-img {
+      padding: 0;
+  }
+  /* position of shadow behind the image */
+  .mfp-no-margins .mfp-figure:after {
+      top: 0;
+      bottom: 0;
+    opacity: 0;
+  }
+  /* padding for main container */
+  .mfp-no-margins .mfp-container {
+      padding: 0;
+  }
+  
+  .window{
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    z-index: 90;
+    /* pointer-events: none; */
+    /* backdrop-filter: blur(3px) */
+  }
+  
+  .window--spacer{
+    /* width: 540px; */
+    width: 540px;
+  
+  }
+  
+  @media (max-width: 1000px){
+    .window--spacer{
+      width: 80px;
+    }
+  }
+  
+  .window--content{
+    box-sizing: border-box;
+    /* padding: 20px; */
+    border-left: 1px solid rgb(158, 158, 158);
+    background: white;
+    flex-grow: 1;
+    pointer-events: all;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .blur-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 89;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #site{
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .is-loading{
+    filter: blur(20px) grayscale(1);
+  }
+  
+  .window-open{
+    overflow-y: hidden;
+  }
+  
+  .window-open .blur-bg{
+    opacity: 0.2;
+  }
+  
+  .is-loading ~ .c{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .c{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    z-index: 30;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+    transform: scale(8);
+  }
+  
+  
+  .c-loader {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: blue;
+    margin: calc((100vh / 2) - 100px) auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation: rotate 1s linear infinite;
+            animation: rotate 1s linear infinite;
+  }
+  @-webkit-keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .c-color {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: inherit;
+    margin: auto;
+  }
+  .c-color:nth-child(1) {
+    top: -50px;
+    left: 0;
+    right: 0;
+    background: #4cca26;
+    box-shadow: 45px 15px #ff554a, 73px 80px #bd5ed4, 25px 145px #1699f5, -45px 131px #4cc926, -70px 50px #ffd001, -25px 5px #ff554a inset, -75px 60px #fda500 inset, -50px 131px #ffd001 inset;
+  }
+
+  li:after {
+    opacity: 1;
+    content: attr(alt);
+    font-size: 10pt;
+    font-weight: regular;
+    display: inline-block;
+    position: static!important;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition: opacity 0.5s ease-in-out;
+    transform: translateX(5px);
+    transition: all 0.5s ease-out;
+  }
+
+  @media only screen and (min-width: 700px) {
+    li:after {
+      opacity: 0;
+      content: attr(alt);
+      color: $color-body-text;
+      font-size: 10pt;
+      font-weight: bold;
+      display: inline-block;
+      position: static!important;
+      margin-left: 10px;
+      transition: opacity 0.5s ease-in-out;
+      transform: translateX(20px);
+      transition: all 0.5s ease-out;
+    }
+    li:hover:after {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+  }
+
+
+  @mixin link-wired($hovColor, $color: $color-body-text) {
+    text-decoration: none;
+    color: $color;
+    border-bottom: 6px solid $hovColor;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    &:hover,
+    &:focus {
+      background-color: $hovColor;
+    }
+  }
+  
+
+  li,
+ul {
+  padding: 0px;
+  line-height: 130%;
+  font-size: 12pt;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+}
