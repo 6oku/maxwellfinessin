@@ -26,7 +26,7 @@ function loopItems(){
   for(var i=0;i<cars.length;i++){
     positionCars(cars[i],(os * -1));
     // console.log(cars[i].clientHeight)
-    os = os + cars[i].clientHeight +5; //this number effects how far vertically until it twists
+    os = os + cars[i].clientHeight +8; //this number effects how far vertically until it twists
   }
 }
 

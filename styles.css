@@ -25,7 +25,7 @@ body{
     min-height: 300vh;
     margin: 0;
     font-family: 'ASansC130';
-    line-height: 1;
+    line-height: 1.15;
     font-weight: 130;
     opacity: 0.93;
     background-color: rgb(0, 0, 0);
@@ -67,7 +67,7 @@ body{
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    padding: 2px;
+    padding: 5px;
   }
   .grid-area .item{
     max-width: 80px;
@@ -99,7 +99,7 @@ body{
   
   .car{
     position: absolute;
-    margin-left: 10px;
+    margin-left: 20px;
     width: fit-content
     transform-origin: top right;
     pointer-events: all;
