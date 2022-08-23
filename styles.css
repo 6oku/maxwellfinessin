@@ -84,7 +84,7 @@ body{
     padding: 5px;
   }
   .grid-area .item{
-    max-width: 80px;
+    max-width: 100px;
   }
   
   #intro{
