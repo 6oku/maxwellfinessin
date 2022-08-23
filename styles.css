@@ -27,7 +27,9 @@ body{
     font-family: 'ASansC130';
     font-weight: 90;
     opacity: 0.93;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color:white;
+
   }
   
   
@@ -97,7 +99,6 @@ body{
     width: fit-content
     transform-origin: top right;
     pointer-events: all;
-    margin-top: -15px;
   }
 
   .car h1{
