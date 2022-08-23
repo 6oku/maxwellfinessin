@@ -13,6 +13,20 @@
   font-weight: 130;
 } 
 
+@font-face {
+  font-family: 'ASansC90';
+  src: url('AUTHENTICSans-Condensed-90.woff');
+  font-weight: 90;
+} 
+
+@font-face {
+  font-family: 'ASansC60';
+  src: url('AUTHENTICSans-Condensed-60.woff2');
+  font-weight: 60;
+} 
+
+
+
 /* 
 @font-face {
   font-family: 'ASansC130';
@@ -24,7 +38,7 @@
 body{
     min-height: 300vh;
     margin: 0;
-    font-family: 'ASansC130';
+    font-family: 'ASansC90';
     line-height: 1.15;
     font-weight: 130;
     opacity: 0.93;
@@ -90,6 +104,11 @@ body{
     pointer-events: none;
   }
 
+
+  b{
+    font-family: 'ASansC130';
+  font-weight: 130;
+  }
   
   
   #car{
@@ -308,6 +327,8 @@ body{
   li:after {
     opacity: 1;
     content: attr(alt);
+    font-family: 'ASansC60';
+    font-weight: 90;
     font-size: 10pt;
     font-weight: regular;
     display: inline-block;
@@ -325,6 +346,8 @@ body{
       opacity: 0;
       content: attr(alt);
       color: $color-body-text;
+      font-family: 'ASansC60';
+      font-weight: 90;
       font-size: 10pt;
       font-weight: bold;
       display: inline-block;
