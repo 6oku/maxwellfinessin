@@ -164,6 +164,14 @@ body{
   .main + .main{
     margin-top: 20px;
   }
+
+  .product:hover{
+    backdrop-filter: invert(80%);
+    color: black;
+    background-color: white;
+    }
+  
+
   
   .margin{
     padding-top: 60vh;
