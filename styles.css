@@ -341,7 +341,7 @@ body{
     transition: all 0.5s ease-out;
   }
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 100px) {
     li:after {
       opacity: 0;
       content: attr(alt);
@@ -352,6 +352,7 @@ body{
       font-weight: bold;
       display: inline-block;
       position: static!important;
+      /* visibility: hidden; */
       margin-left: 1d0px;
       transition: opacity 0.5s ease-in-out;
       transform: translateX(20px);
