@@ -40,12 +40,19 @@ body{
     margin: 0;
     font-family: 'ASansC90';
     line-height: 1.15;
-    font-weight: 130;
+    font-weight: 90;
     opacity: 0.93;
   background-color: black;
   color: white;
   cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
 
+  }
+
+
+  h1{
+    font-family: 'ASansC130';
+    font-weight: 130;
+    font-size: 25px;
   }
   
   p{
