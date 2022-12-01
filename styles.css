@@ -44,7 +44,7 @@ body{
     opacity: 0.93;
   background-color: black;
   color: white;
-  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
+  /* cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important; */
 
   }
 
@@ -64,12 +64,12 @@ body{
   }
   
   a{
-    color:white;
+    color: white;
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
   }
   a:hover{
-    color: rgb(177, 177, 177);
+    color: rgb(255, 0, 0);
   }
   
   .img{
@@ -128,7 +128,8 @@ body{
     position: absolute;
     margin-left: 20px;
     width: fit-content
-
+    transform-origin: top right;
+    pointer-events: all;
   }
 
   .car h1{
