@@ -91,7 +91,8 @@ body{
   }
   .grid-area .item{
     max-width: 100px;
-    padding: 5px;
+    padding: 7px;
+    margin-top: 0;
   }
   
   #intro{
@@ -396,7 +397,7 @@ ul {
 }
 
 @media only screen and (max-width: 640px){ 
-  CODE GOES HERE 
+
 }
 
 
