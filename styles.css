@@ -396,12 +396,6 @@ ul {
   -webkit-font-smoothing: antialiased;
 }
 
-@media only screen and (max-width: 640px){ 
-  .ca3-scroll-down-arrow{
-    left: 50w;
-  }
-}
-
 
 
 [data-ca3_icon]::before {
