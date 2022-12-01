@@ -388,6 +388,7 @@ body{
   li,
 ul {
   padding: 0px;
+  margin: 0em;
   line-height: 100%;
   font-size: 12pt;
   list-style: none;
